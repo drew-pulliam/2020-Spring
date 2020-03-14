@@ -24,26 +24,17 @@ public class Main {
 
         // ask user for input file names and initialize file input scanners
         System.out.println("Please input routes filename: ");
-        String userInput = userIn.nextLine(); // TODO
-        // String userInput = "pilot_routes1.txt";
+        String userInput = userIn.nextLine();
         Scanner routesIn = new Scanner(new File(userInput));
 
         System.out.println("Please input commands filename: ");
-        userInput = userIn.nextLine(); // TODO
-        // userInput = "sample_commands.txt";
+        userInput = userIn.nextLine();
         Scanner commandsIn = new Scanner(new File(userInput));
 
         // loop through the entire input file, saving pilot names and coordinates
         while(routesIn.hasNextLine()){
-            // save pilot name for output later
-            // String pilotName = routesIn.next();
-            // pilotList[pilotNum] = pilotName;
-            
             // get coordinates
-            parseCoords(routesIn, areasOut); // TODO
-            
-            // // increment pilot number
-            // pilotNum++;
+            parseCoords(routesIn);
         }
 
         LinkedList<Payload> l = new LinkedList<Payload>();
@@ -119,6 +110,7 @@ public class Main {
             }
         }
 
+        // print out linked list to pilot_areas.txt
         areasOut.print(l.toString());
 
         userIn.close();
@@ -150,32 +142,16 @@ public class Main {
         // return name + " found";
     }
 
-    // // parse the input file for coordinates and save them in masterList
-    // private static void getCoordinates(Scanner input){
-    //     String line = input.nextLine();
-    //     line = line.trim();
-    //     String[] coords = line.split(" ");
-
-    //     // split the coordinates into x and y, then save those values in masterList
-    //     for (int i = 0;i < coords.length; i++){
-    //         String[] xy = coords[i].split(",");
-    //         masterList[pilotNum][i][0] = Double.parseDouble(xy[0]);
-    //         masterList[pilotNum][i][1] = Double.parseDouble(xy[1]);
-    //     }
-
-    //     // save the last real coordinate so that area doesn't calculate using extra zeros
-    //     lastElem[pilotNum] = coords.length;
-    // }
-
     // parse the input file for coordinates and save them in masterList
-    private static void parseCoords(Scanner input, PrintWriter out){
+    private static void parseCoords(Scanner input){
         String line = input.nextLine();
         line = line.trim();
 
-        int firstCoord = line.indexOf(","); // TODO check if -1?
+        // find how many words the pilot name consists of
+        int firstCoord = line.indexOf(",");
         int numWordsPilotName = 0;
         int x = 0;
-        int lastWord = line.indexOf(" ", x); // TODO check if -1?
+        int lastWord = line.indexOf(" ", x);
         while(lastWord < firstCoord){
             x = lastWord + 1;
             lastWord = line.indexOf(" ", x) + 1;
@@ -233,6 +209,7 @@ public class Main {
         pilotNum++;
     }
 
+    // decide whether a given string is a valid pilot name
     private static boolean isValidName(String name){
         char[] pilotChars = name.toCharArray();
         for(char ch : pilotChars){
