@@ -1,0 +1,5 @@
+Thrawn    3.75
+Kallus    9.00
+Krennic    92.00
+Cylo    133.70
+Tarkin    100.00
