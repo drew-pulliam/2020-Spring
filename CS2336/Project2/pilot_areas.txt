@@ -1,6 +1,6 @@
-Boshek Johnson   133.70
-D e'n g4 -ar   83.20
-Fi nn   237.13
-Malakili   1731.95
-Oleg   776.81
-Palpatine   778.06
+Boshek Johnson	133.70
+D e'n g4 -ar	83.20
+Fi nn	237.13
+Malakili	1731.95
+Oleg	776.81
+Palpatine	778.06

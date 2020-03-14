@@ -96,7 +96,7 @@ public class LinkedList<T extends Comparable<T>> {
                 next = next.getNext();
             }
         }
-        return result.trim();
+        return result;
     }
     
 }

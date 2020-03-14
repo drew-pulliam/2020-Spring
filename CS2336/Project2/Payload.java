@@ -58,7 +58,7 @@ public class Payload implements Comparable<Payload> {
     public String toString(){
         // return area rounded to 2 decimal places
         String formattedArea = String.format("%.2f", area);
-        return name + "   " + formattedArea;
+        return name + "\t" + formattedArea;
     }
     
 }
