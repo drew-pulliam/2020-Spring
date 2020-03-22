@@ -25,6 +25,7 @@ public class Payload implements Comparable<Payload> {
 
     @Override
     public int compareTo(Payload otherPayload) {
+        // compare either by area or by name
         if(compareByArea){
             return (this.area > otherPayload.area) ?  1 : (this.area < otherPayload.area) ? -1 : 0;
         }else{
@@ -55,8 +56,9 @@ public class Payload implements Comparable<Payload> {
 
     @Override
     public String toString(){
+        // return area rounded to 2 decimal places
         String formattedArea = String.format("%.2f", area);
-        return name + "   " + formattedArea;
+        return name + "\t" + formattedArea;
     }
     
 }
