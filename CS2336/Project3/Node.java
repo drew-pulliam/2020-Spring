@@ -8,7 +8,6 @@ public class Node<T extends Comparable<T>> implements Comparable<Node<T>> {
     private T object;
     private Node<T> leftNode;
     private Node<T> rightNode;
-    // private Node<T> parentNode;
 
     public Node(){
         this.object = null;
@@ -32,13 +31,6 @@ public class Node<T extends Comparable<T>> implements Comparable<Node<T>> {
         return rightNode;
     }
 
-    // public void setParent(Node<T> parentNode){
-    //     this.parentNode = parentNode;
-    // }
-    // public Node<T> getParent(){
-    //     return parentNode;
-    // }
-
     public T getObject(){
         return object;
     }
@@ -51,6 +43,14 @@ public class Node<T extends Comparable<T>> implements Comparable<Node<T>> {
     @Override
     public String toString(){
         return object.toString();
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(o instanceof Node<?>){
+            return this.object.equals(((Node<?>)o).object);
+        }
+        return false;
     }
     
 }

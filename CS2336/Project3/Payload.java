@@ -14,6 +14,10 @@ public class Payload implements Comparable<Payload> {
         
     }
 
+    public Payload(String name){
+        this.name = name;
+    }
+
     public Payload(String name, int highScore, String initials, int plays){
         this.name = name;
         this.highScore = highScore;
@@ -67,6 +71,14 @@ public class Payload implements Comparable<Payload> {
     public String basicLogOutput(){
         String formattedRevenue = String.format("%.2f", getRevenue());
         return "High Score: " + highScore + "\nInitials: " + initials + "\nPlays: " + plays + "\nRevenue: $" + formattedRevenue + "\n";
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(o instanceof Payload){
+            return this.name.contains(((Payload)o).name);
+        }
+        return false;
     }
     
 }

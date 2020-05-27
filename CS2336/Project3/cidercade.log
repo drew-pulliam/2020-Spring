@@ -1,0 +1,107 @@
+Tron NOT FOUND
+
+RECORD ADDED
+Name: Tron
+High Score: 60000
+Initials: WKF
+Plays: 500
+Revenue: $125.00
+
+RECORD ADDED
+Name: 1943: The Battle of Midway
+High Score: 820500
+Initials: TFF
+Plays: 628
+Revenue: $157.00
+
+RECORD ADDED
+Name: Ghouls 'n' Ghosts
+High Score: 2195000
+Initials: AAA
+Plays: 409
+Revenue: $102.25
+
+RECORD ADDED
+Name: Ghosts 'n' Goblins
+High Score: 3350600
+Initials: BBB
+Plays: 212
+Revenue: $53.00
+
+1943: The Battle of Midway UPDATED
+UPDATE TO initials - VALUE XYZ
+High Score: 820500
+Initials: XYZ
+Plays: 628
+Revenue: $157.00
+
+RECORD ADDED
+Name: Double Dragon
+High Score: 850000
+Initials: D&D
+Plays: 80
+Revenue: $20.00
+
+RECORD ADDED
+Name: Tapper
+High Score: 55200
+Initials: BUD
+Plays: 25
+Revenue: $6.25
+
+RECORDS SORTED DESCENDING
+Tron, 60000, WKF, 500, $125.00
+Tapper, 55200, BUD, 25, $6.25
+Ghouls 'n' Ghosts, 2195000, AAA, 409, $102.25
+Ghosts 'n' Goblins, 3350600, BBB, 212, $53.00
+Double Dragon, 850000, D&D, 80, $20.00
+1943: The Battle of Midway, 820500, XYZ, 628, $157.00
+
+RECORD DELETED
+Name: 1943: The Battle of Midway
+High Score: 820500
+Initials: XYZ
+Plays: 628
+Revenue: $157.00
+
+RECORD DELETED
+Name: Tron
+High Score: 60000
+Initials: WKF
+Plays: 500
+Revenue: $125.00
+
+RECORDS SORTED ASCENDING
+Double Dragon, 850000, D&D, 80, $20.00
+Ghosts 'n' Goblins, 3350600, BBB, 212, $53.00
+Ghouls 'n' Ghosts, 2195000, AAA, 409, $102.25
+Tapper, 55200, BUD, 25, $6.25
+
+RECORD DELETED
+Name: Ghouls 'n' Ghosts
+High Score: 2195000
+Initials: AAA
+Plays: 409
+Revenue: $102.25
+
+RECORD DELETED
+Name: Double Dragon
+High Score: 850000
+Initials: D&D
+Plays: 80
+Revenue: $20.00
+
+RECORD DELETED
+Name: Tapper
+High Score: 55200
+Initials: BUD
+Plays: 25
+Revenue: $6.25
+
+RECORD DELETED
+Name: Ghosts 'n' Goblins
+High Score: 3350600
+Initials: BBB
+Plays: 212
+Revenue: $53.00
+
